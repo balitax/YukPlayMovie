@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyView" customModule="YukPlay" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionView" destination="Dxq-vF-rbz" id="fMV-zr-pKL"/>
+                <outlet property="imageView" destination="6nM-r3-FD6" id="fsF-Eu-roU"/>
+                <outlet property="titleView" destination="yzw-KV-oa2" id="2Jn-pI-Czb"/>
+                <outlet property="view" destination="iN0-l3-epB" id="qsP-m4-OP6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMC-fv-jfc">
+                    <rect key="frame" x="0.0" y="76.5" width="414" height="247"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="6nM-r3-FD6">
+                            <rect key="frame" x="135" y="18" width="144" height="132"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="144" id="6iz-9O-lDd"/>
+                                <constraint firstAttribute="height" constant="132" id="VW2-y5-Ba5"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mau nonton apa ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzw-KV-oa2">
+                            <rect key="frame" x="20" y="168" width="374" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ketik aja nama film atau series yang mau kamu tonton di YukPlay" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxq-vF-rbz">
+                            <rect key="frame" x="20" y="195.5" width="374" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="yzw-KV-oa2" secondAttribute="trailing" constant="20" id="1mt-oL-Jnc"/>
+                        <constraint firstItem="yzw-KV-oa2" firstAttribute="top" secondItem="6nM-r3-FD6" secondAttribute="bottom" constant="18" id="KYf-OT-Kvq"/>
+                        <constraint firstItem="yzw-KV-oa2" firstAttribute="leading" secondItem="AMC-fv-jfc" secondAttribute="leading" constant="20" id="MMW-jR-uDZ"/>
+                        <constraint firstItem="6nM-r3-FD6" firstAttribute="centerX" secondItem="AMC-fv-jfc" secondAttribute="centerX" id="Ofg-w2-VU3"/>
+                        <constraint firstAttribute="bottom" secondItem="Dxq-vF-rbz" secondAttribute="bottom" constant="18" id="OpR-EQ-ikB"/>
+                        <constraint firstItem="Dxq-vF-rbz" firstAttribute="leading" secondItem="yzw-KV-oa2" secondAttribute="leading" id="kJU-Ic-s6t"/>
+                        <constraint firstItem="Dxq-vF-rbz" firstAttribute="trailing" secondItem="yzw-KV-oa2" secondAttribute="trailing" id="l9r-ig-CqS"/>
+                        <constraint firstItem="Dxq-vF-rbz" firstAttribute="top" secondItem="yzw-KV-oa2" secondAttribute="bottom" constant="8" id="n1R-oL-XRc"/>
+                        <constraint firstItem="6nM-r3-FD6" firstAttribute="top" secondItem="AMC-fv-jfc" secondAttribute="top" constant="18" id="vyz-yi-2Hp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AMC-fv-jfc" secondAttribute="trailing" id="5vS-0V-ZPY"/>
+                <constraint firstItem="AMC-fv-jfc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HOF-63-KHi"/>
+                <constraint firstItem="AMC-fv-jfc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XI2-dq-Qc4"/>
+                <constraint firstItem="AMC-fv-jfc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dbk-ZM-uPv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_search" width="164" height="152"/>
+    </resources>
+</document>

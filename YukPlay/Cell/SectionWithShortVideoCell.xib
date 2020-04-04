@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SectionWithShortVideoCell" customModule="YukPlay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="535"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="535"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klw-G2-11d">
+                        <rect key="frame" x="0.0" y="0.0" width="351" height="535"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uhr-Ji-SiP">
+                                <rect key="frame" x="254" y="515" width="97" height="20"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jo-vQ-MEr" customClass="YoutubePlayerView" customModule="YoutubePlayerView">
+                                <rect key="frame" x="8" y="8" width="335" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="ghV-Yt-1nd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YT4-zS-qb1">
+                                <rect key="frame" x="8" y="202" width="335" height="67"/>
+                                <string key="text">Hanif membawa Nadya istrinya dan ketiga anak mereka untuk menjenguk pengasuh opanti asuhan tempatnya dulu dibesarkan. Ketika kejadian mistis meneror keluarga</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menyambut Hari Kartini" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glx-v1-aO8">
+                                <rect key="frame" x="8" y="283" width="335" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buat nyambut Hari Kartini, yuk nonton film-film keren yang udah disiapin YukPlay dibawah ini" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-Ii-mLZ">
+                                <rect key="frame" x="8" y="308" width="335" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gow-Iu-F05">
+                                <rect key="frame" x="0.0" y="365.5" width="351" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7il-59-NQI"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jgJ-c9-imk">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LxE-Ii-mLZ" firstAttribute="top" secondItem="Glx-v1-aO8" secondAttribute="bottom" constant="8" id="4bb-gA-lon"/>
+                            <constraint firstItem="0jo-vQ-MEr" firstAttribute="leading" secondItem="klw-G2-11d" secondAttribute="leading" constant="8" id="8gl-Hu-AiO"/>
+                            <constraint firstAttribute="bottom" secondItem="uhr-Ji-SiP" secondAttribute="bottom" id="AVU-Lg-rHP"/>
+                            <constraint firstItem="YT4-zS-qb1" firstAttribute="leading" secondItem="0jo-vQ-MEr" secondAttribute="leading" id="LXa-dn-5y7"/>
+                            <constraint firstItem="Gow-Iu-F05" firstAttribute="leading" secondItem="klw-G2-11d" secondAttribute="leading" id="MUf-1e-eeh"/>
+                            <constraint firstItem="LxE-Ii-mLZ" firstAttribute="leading" secondItem="Glx-v1-aO8" secondAttribute="leading" id="VAV-sb-GEp"/>
+                            <constraint firstAttribute="trailing" secondItem="Gow-Iu-F05" secondAttribute="trailing" id="VKT-z2-AKv"/>
+                            <constraint firstItem="YT4-zS-qb1" firstAttribute="trailing" secondItem="0jo-vQ-MEr" secondAttribute="trailing" id="acb-OL-Apu"/>
+                            <constraint firstAttribute="trailing" secondItem="uhr-Ji-SiP" secondAttribute="trailing" id="bOE-2A-qBo"/>
+                            <constraint firstItem="Glx-v1-aO8" firstAttribute="trailing" secondItem="YT4-zS-qb1" secondAttribute="trailing" id="bqb-JU-AvK"/>
+                            <constraint firstItem="Glx-v1-aO8" firstAttribute="top" secondItem="YT4-zS-qb1" secondAttribute="bottom" constant="14" id="clI-jw-sqI"/>
+                            <constraint firstItem="Glx-v1-aO8" firstAttribute="leading" secondItem="YT4-zS-qb1" secondAttribute="leading" id="dst-7T-F9E"/>
+                            <constraint firstItem="0jo-vQ-MEr" firstAttribute="top" secondItem="klw-G2-11d" secondAttribute="top" constant="8" id="et2-Ba-tOQ"/>
+                            <constraint firstItem="YT4-zS-qb1" firstAttribute="top" secondItem="0jo-vQ-MEr" secondAttribute="bottom" constant="14" id="f1O-9o-CHA"/>
+                            <constraint firstItem="Gow-Iu-F05" firstAttribute="top" secondItem="LxE-Ii-mLZ" secondAttribute="bottom" constant="24" id="kIt-iq-9Gg"/>
+                            <constraint firstAttribute="trailing" secondItem="0jo-vQ-MEr" secondAttribute="trailing" constant="8" id="mjq-iV-HTu"/>
+                            <constraint firstItem="LxE-Ii-mLZ" firstAttribute="trailing" secondItem="Glx-v1-aO8" secondAttribute="trailing" id="w7z-a3-65a"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Gow-Iu-F05" secondAttribute="bottom" constant="8" id="xhn-2V-NKe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="klw-G2-11d" secondAttribute="bottom" id="AjL-Zc-vNr"/>
+                <constraint firstAttribute="trailing" secondItem="klw-G2-11d" secondAttribute="trailing" id="VN7-Eg-afy"/>
+                <constraint firstItem="klw-G2-11d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YRN-TH-7PC"/>
+                <constraint firstItem="klw-G2-11d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="k9d-cB-ohw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="351" height="535"/>
+            <connections>
+                <outlet property="collectionView" destination="Gow-Iu-F05" id="O3k-jv-QHA"/>
+                <outlet property="videoContainer" destination="0jo-vQ-MEr" id="Et4-jO-J21"/>
+            </connections>
+            <point key="canvasLocation" x="-80.434782608695656" y="117.52232142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="logo" width="97" height="20"/>
+    </resources>
+</document>
